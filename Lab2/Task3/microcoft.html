@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Microsoft</title>
+        <style>
+            html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            }
+            .container{
+            max-width: 1920px;
+            width: 100%;
+            min-height: 100vh;
+            margin: auto;
+            }
+            .div1{
+            max-height:52px;
+            background-color: white;
+            }
+            .div2{
+            max-height:52px;
+            background-color: #0067b8;
+
+            }
+            .slogan{
+            font-size: 1.4rem;
+            display: flex;
+            justify-content: center;
+            padding:10px 10px;
+            color:white;
+            text-decoration: none;
+            }
+            .logo{
+            position: relative;
+            left:95px;
+            top:15px;
+            }
+            .products{
+                list-style: none;
+                padding: 0;
+                margin:10px 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap:10px;
+                position: relative;
+                left:240px;
+                top:-17px;
+                
+            }
+            .products li:hover {
+                text-decoration: underline;
+            }
+            .products li {
+                cursor: pointer;
+            }
+
+            .services{
+            list-style: none;
+            padding: 0;
+            margin:10px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap:10px;
+            position: absolute;
+            right:200px;
+            top:13px;
+            
+            }
+            .services li:hover {
+            text-decoration: underline;
+            }
+            .services li {
+            cursor: pointer;
+            }
+            .slider-container {
+            position: relative;
+            width: 100%;
+            max-width: 2000px;
+            margin: auto;
+            overflow: hidden;
+            height: 50vh; 
+            }
+
+            .slides {
+            display: flex;
+            width: 200%; 
+            transition: transform 0.8s ease-in-out;
+            height: 100%; 
+            }
+
+            .slide {
+            width: 100%;
+            flex: 0 0 100%;
+            height: 100%; 
+            }
+
+            .slide img {
+            width: 1515px;
+            height: 100%; 
+            object-fit: cover; 
+            }
+
+            @media (max-width: 768px) {
+            .slider-container {
+                height: 30vh; 
+            }
+            }
+
+
+            .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+            }
+
+            .prev { left: 10px; }
+            .next { right: 10px; }
+
+            .dots {
+            text-align: center;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            }
+
+            .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 5px;
+            background-color: gray;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            }
+
+            .active {
+            background-color: white;
+            }
+            .list-products{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+            }
+
+
+            .category {
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            text-decoration: underline;
+            }
+
+            .category img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            }
+
+            .category a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+            }
+
+            .advertisment {
+            margin-top: 80px;
+            display: flex;
+            flex-wrap: wrap; /* Позволяет перенос элементов, если не влезают */
+            justify-content: space-between; /* Равномерное распределение */
+            align-items: stretch; /* Сделает все элементы одинаковой высоты */
+            gap: 20px; /* Пространство между блоками */
+            padding: 20px;
+            }
+
+
+            .advertisment > div {
+            flex: 1 1 calc(25% - 20px); /* Каждый блок занимает 25% ширины */
+            max-width: 300px; /* Не даёт блокам стать слишком большими */
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px;
+            }
+
+
+            .advertisment > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+            }
+
+            .advertisment img {
+            width: 100%;
+            border-radius: 10px;
+            }
+
+            .advertisment h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            }
+
+            .advertisment p {
+            font-size: 1rem;
+            color: #333;
+            }
+
+            .advertisment button {
+            background-color: #0067b8;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            }
+
+            .advertisment button:hover {
+            background-color: #004a8f;
+            }
+
+            .ai {
+            flex: 1 1 calc(25% - 20px); /* Сделает его таким же, как другие блоки */
+            max-width: 300px; /* Ограничивает максимальную ширину */
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="div1">
+                <img src="micrologo.png" alt="microsoft-logo" width="108px" class="logo">
+                <ul class="products">
+                    <li>Microsoft 365</li>
+                    <li>Teams</li>
+                    <li>Copilot</li>
+                    <li>Windows</li>
+                    <li>Surface</li>
+                    <li>Xbox</li>
+                    <li>Deals</li>
+                    <li>Small</li>
+                    <li>Business</li>
+                    <li>Support</li>
+                </ul>
+
+                <ul class="services">
+                    <li>All Microsoft</li>
+                    <li>Search</li>
+                    <li>Cart</li>
+                    <li>Sign in</li> 
+                </ul>
+
+            </div>
+            <div class="div2">
+                <a href="#" class="slogan">
+                    Pay your way, with flexible payment options available at checkout. Learn more >
+                </a>
+            </div>
+            
+            <div class="slider-container">
+                <div class="slides">
+                    <div class="slide"><img src="copilot.avif" alt="Image 1"></div>
+                </div>
+        
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+        
+                <div class="dots">
+                    <span class="dot active" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                </div>
+            </div>
+
+            <div class="list-products">
+                <div class="category">
+                    <img src="surface.svg" alt="Surface">
+                    <a href="#">Shop Surface devices</a>
+                </div>
+                <div class="category">
+                    <img src="xbox.svg" alt="Xbox">
+                    <a href="#">Shop Xbox games and consoles</a>
+                </div>
+                <div class="category">
+                    <img src="accesories.svg" alt="Accessories">
+                    <a href="#">Shop for accessories</a>
+                </div>
+                <div class="category">
+                    <img src="business.svg" alt="Business">
+                    <a href="#">Shop for your business</a>
+                </div>
+                <div class="category">
+                    <img src="pc.svg" alt="PC">
+                    <a href="#">Find your next PC</a>
+                </div>
+                <div class="category">
+                    <img src="365.svg" alt="Microsoft 365">
+                    <a href="#">Choose your Microsoft 365</a>
+                </div>
+            </div>
+
+            <div class="advertisment">
+                <div class="xbox2">
+                    <img src="xbox2.webp">
+                    <h2>Xbox Series S</h2>
+                    <p>Next-gen performance in the smallest Xbox ever.</p>
+                    <button>Shop Xbox Series S</button>
+                </div>
+                <div class="pc2">
+                    <img src="pc2.avif">
+                    <h2>Save up to $500 on select Surface Laptop, Copilot+ PC</h2>
+                    <p>Save big on an AI-powered companion made for next-gen performance. For a limited time.</p>
+                    <button>Shop now</button>
+                </div>
+                <div class="controller">
+                    <img src="contoller.avif">
+                    <h2>Reveal the mysteries within</h2>
+                    <p>Get the Xbox Wireless Controller – Pulse Cipher, featuring a transparent red design, silver interior, metallic features, and more.</p>
+                    <button>Pre-order now</button>
+                </div>
+                <div class="ai">
+                    <img src="ai.avif">
+                    <h2>Copilot is your AI companion</h2>
+                    <p>Always by your side, ready to support you whenever and wherever you need it.</p>
+                    <button>Download the Copilot app</button>
+                </div>
+            </div>
+
+            
+              
+        </div>
+    </body>
+</html>
+            

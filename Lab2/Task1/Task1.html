@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Facebook Login page</title>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        background: #f0f2f5;
+        font-size: Helvetica, Arial, sans-serif;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+        margin-top: -35px;
+    }
+    .text-box {
+        width: 500px;
+        margin-top: -100px;
+    }
+    .text-box img {
+        width: 235px;
+        margin-bottom: -40px;
+        margin-left: -20px;
+    }
+    .text-box p {
+        color: #000;
+        font-size: 26px;
+        font-weight: normal;
+        line-height: 32px;
+    }
+    .log-box {
+        width: 350px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 5px;
+        background: #fff;
+        margin-left: 60px;
+        box-shadow: 0px 2px 10px 1px rgba(71, 71, 71, 0.52);
+    }
+    .log-box input {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 15px;
+        font-size: 18px;
+        box-sizing: border-box;
+        border: 1px solid #eeebeb;
+        border-radius: 5px;
+        outline: none;
+    }
+    .log-box input:focus {
+        box-shadow: 0px 0px 1px 1px rgb(22, 11, 229);
+    }
+    .log-box button {
+        width: 100%;
+        margin-bottom: 15px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 5px;
+        border: none;
+        padding: 13px 0;
+        cursor: pointer;
+        background: #166fe5;
+    }
+    .log-box button:hover {
+        background: #1877f2;
+    }
+    .log-box .a1 {
+        color: #166fe5;
+        font-size: 14px;
+        text-decoration: none;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        display: block;
+        font-weight: bold;
+    }
+    .log-box .a1:hover {
+        text-decoration: underline;
+    }
+    .log-box hr {
+        border: 1px solid #dadde1;
+        margin-bottom: 15px;
+    }
+    .log-box .create-btn {
+        padding: 15px 20px;
+        border-radius: 5px;
+        background: #36a420;
+        display: inline-block;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+    .log-box .create-btn a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        font-weight: bold;
+    }
+    .mini-txt {
+        width: 350px;
+        padding: 15px;
+        text-align: center;
+        margin-left: 60px;
+    }
+    .mini-txt a {
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+        margin-right: 0px;
+    }
+    .mini-txt a:hover {
+        text-decoration: underline;
+    }
+    .container2 {
+        background: #fff;
+        width: 100%;
+        height: 20vh;
+        text-align: left;
+        font-size: 13px;
+        display: inline-block;
+        margin-top: 60px;
+    }
+    .lan {
+        margin-left: 300px;
+        margin-top: 30px;
+    }
+    .lan a {
+        text-decoration: none;
+        color: rgb(150, 150, 150);
+    }
+    .lan a:hover {
+        text-decoration: underline;
+    }
+    .container2 hr {
+        margin-left: 300px;
+        margin-right: 300px;
+        border: 1px solid #dadde1;
+    }
+    .Options {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+    .Options a {
+        text-decoration: none;
+        color: rgb(150, 150, 150);
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .Options a:hover {
+        text-decoration: underline;
+    }
+    a {
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    .lan button {
+        color: #000000;
+        border: 0.7px solid #c1c1c1;
+        width: 30px;
+        cursor: pointer;
+        background: #e1e7e8;
+        font-weight: bold;
+    }
+    .lan button:hover {
+        background: #d4dadb;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-box">
+            <img src="fb.svg" alt="logo">
+            <h2>Facebook helps you connect and share with the people in your life.</h2>
+        </div>
+        <div>
+            <div class="log-box">
+                <form>
+                    <input type="text" placeholder="Email address or phone number">
+                    <input type="password" placeholder="Password">
+                    <button type="submit">Log in</button>
+                    <a class="a1" href="#">Forgotten password?</a>
+                    <hr>
+                    <div class="create-btn">
+                        <a href="#">Create new account</a>
+                    </div>
+                </form>
+            </div>
+            <div class="mini-txt">
+                <p><a href="#">Create a Page</a> for celebrity, brand, or business</p>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="lan">
+            <a href="#">English (UK)</a>
+            <a href="#">Русский</a>
+            <a href="#">Қазақша</a>
+            <a href="#">Türkçe</a>
+            <a href="#">Bahasa Indonesia</a>
+            <a href="#">中文(简体)</a>
+            <a href="#">Deutsch</a>
+            <a href="#">한국어</a>
+            <a href="#">Shqip</a>
+            <a href="#">Español</a>
+            <a href="#">Português (Brasil)</a>
+            <button>+</button>
+        </div>
+        <hr>
+        <div class="Options">
+            <a href="#">Sign Up</a>
+            <a href="#">Log in</a>
+            <a href="#">Messenger</a>
+            <a href="#">Facebook Lite</a>
+            <a href="#">Video</a>
+            <a href="#">Places</a>
+            <a href="#">Games</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Meta Pay</a>
+            <a href="#">Meta Store</a>
+            <a href="#">Meta Quest</a>
+            <a href="#">Ray-Ban Meta</a>
+            <a href="#">Meta AI</a>
+            <a href="#">Instagram</a>
+            <a href="#">Threads</a>
+            <a href="#">Fundraisers</a>
+            <a href="#">Services</a>
+            <a href="#">Voting Information Centre</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Privacy Centre</a>
+            <a href="#">Groups</a>
+            <a href="#">About</a>
+            <a href="#">Create ad</a>
+            <a href="#">Create Page</a>
+            <a href="#">Developers</a>
+            <a href="#">Careers</a>
+            <a href="#">Cookies</a>
+            <a href="#">AdChoices</a>
+            <a href="#">Terms</a>
+            <a href="#">Help</a>
+            <a href="#">Contact uploading and non-usersSettings</a>
+        </div>
+    </div>
+</body>
+</html>
