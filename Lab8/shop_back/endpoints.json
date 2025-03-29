@@ -1,0 +1,30 @@
+{
+    "endpoints": [
+      {
+        "name": "List of all Products",
+        "method": "GET",
+        "url": "/api/products/"
+      },
+      {
+        "name": "Get one Product",
+        "method": "GET",
+        "url": "/api/products/<int:id>/"
+      },
+      {
+        "name": "List of all Categories",
+        "method": "GET",
+        "url": "/api/categories/"
+      },
+      {
+        "name": "Get one Category",
+        "method": "GET",
+        "url": "/api/categories/<int:id>/"
+      },
+      {
+        "name": "List of Products by Category",
+        "method": "GET",
+        "url": "/api/categories/<int:id>/products/"
+      }
+    ]
+}
+  
