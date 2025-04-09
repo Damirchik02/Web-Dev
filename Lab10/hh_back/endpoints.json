@@ -1,0 +1,184 @@
+[
+    {
+      "model": "api.company",
+      "pk": 1,
+      "fields": {
+        "name": "Google",
+        "description": "Search engine giant",
+        "city": "Mountain View",
+        "address": "1600 Amphitheatre Parkway"
+      }
+    },
+    {
+      "model": "api.company",
+      "pk": 2,
+      "fields": {
+        "name": "Microsoft",
+        "description": "Technology and software company",
+        "city": "Redmond",
+        "address": "One Microsoft Way"
+      }
+    },
+    {
+      "model": "api.company",
+      "pk": 3,
+      "fields": {
+        "name": "Amazon",
+        "description": "E-commerce and cloud computing",
+        "city": "Seattle",
+        "address": "410 Terry Ave"
+      }
+    },
+    {
+      "model": "api.company",
+      "pk": 4,
+      "fields": {
+        "name": "Apple",
+        "description": "Hardware and software company",
+        "city": "Cupertino",
+        "address": "1 Apple Park Way"
+      }
+    },
+    {
+      "model": "api.company",
+      "pk": 5,
+      "fields": {
+        "name": "Netflix",
+        "description": "Streaming and media",
+        "city": "Los Gatos",
+        "address": "100 Winchester Circle"
+      }
+    },
+  
+    {
+      "model": "api.vacancy",
+      "pk": 1,
+      "fields": {
+        "name": "Backend Developer",
+        "description": "Python/Django developer",
+        "salary": 4500.0,
+        "company": 1
+      }
+    },
+    {
+      "model": "api.vacancy",
+      "pk": 2,
+      "fields": {
+        "name": "Frontend Developer",
+        "description": "React/JS developer",
+        "salary": 4200.0,
+        "company": 1
+      }
+    },
+    {
+      "model": "api.vacancy",
+      "pk": 3,
+      "fields": {
+        "name": "DevOps Engineer",
+        "description": "Kubernetes, AWS",
+        "salary": 5000.0,
+        "company": 2
+      }
+    },
+    {
+      "model": "api.vacancy",
+      "pk": 4,
+      "fields": {
+        "name": "Product Manager",
+        "description": "Manage software products",
+        "salary": 5300.0,
+        "company": 2
+      }
+    },
+    {
+      "model": "api.vacancy",
+      "pk": 5,
+      "fields": {
+        "name": "Data Analyst",
+        "description": "SQL, PowerBI",
+        "salary": 4000.0,
+        "company": 3
+      }
+    },
+    {
+      "model": "api.vacancy",
+      "pk": 6,
+      "fields": {
+        "name": "Cloud Engineer",
+        "description": "Work with AWS/GCP",
+        "salary": 5600.0,
+        "company": 3
+      }
+    },
+    {
+      "model": "api.vacancy",
+      "pk": 7,
+      "fields": {
+        "name": "iOS Developer",
+        "description": "Swift and iOS SDK",
+        "salary": 4800.0,
+        "company": 4
+      }
+    },
+    {
+      "model": "api.vacancy",
+      "pk": 8,
+      "fields": {
+        "name": "UI/UX Designer",
+        "description": "Figma, Adobe XD",
+        "salary": 3700.0,
+        "company": 4
+      }
+    },
+    {
+      "model": "api.vacancy",
+      "pk": 9,
+      "fields": {
+        "name": "Machine Learning Engineer",
+        "description": "TensorFlow, PyTorch",
+        "salary": 6200.0,
+        "company": 5
+      }
+    },
+    {
+      "model": "api.vacancy",
+      "pk": 10,
+      "fields": {
+        "name": "Security Engineer",
+        "description": "Cybersecurity expert",
+        "salary": 5900.0,
+        "company": 5
+      }
+    },
+    {
+      "model": "api.vacancy",
+      "pk": 11,
+      "fields": {
+        "name": "SRE",
+        "description": "Monitoring and reliability",
+        "salary": 5300.0,
+        "company": 1
+      }
+    },
+    {
+      "model": "api.vacancy",
+      "pk": 12,
+      "fields": {
+        "name": "QA Engineer",
+        "description": "Manual/Automation testing",
+        "salary": 3500.0,
+        "company": 2
+      }
+    },
+    {
+      "model": "api.vacancy",
+      "pk": 13,
+      "fields": {
+        "name": "Business Analyst",
+        "description": "Bridge business and tech",
+        "salary": 3900.0,
+        "company": 3
+      }
+    }
+  ]
+  

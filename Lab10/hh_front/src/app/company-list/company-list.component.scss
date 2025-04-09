@@ -1,0 +1,23 @@
+.company-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .company-title {
+    margin: 0;
+    cursor: pointer;
+    color: #3366cc;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .company-title:hover {
+    color: #224499;
+  }
+  
+  .vacancy-list-container {
+    margin-top: 10px;
+  }
+  

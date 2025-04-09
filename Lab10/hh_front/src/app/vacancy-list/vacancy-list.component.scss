@@ -1,0 +1,26 @@
+.vacancy-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .vacancy-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .vacancy-title {
+    margin: 0 0 5px;
+  }
+  
+  .vacancy-description {
+    margin: 0 0 8px;
+  }
+  
+  .vacancy-salary {
+    margin: 0;
+    font-weight: bold;
+  }
+  
